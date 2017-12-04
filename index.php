@@ -6,3 +6,5 @@
  * Time: 15:33
  */
 echo "Hello World";
+
+print_r($_GET);
