@@ -16,3 +16,5 @@ extract($_GET);
 $link = mysqli_connect("localhost", "pipo", "declown", "vulnerable_db");
 $query = "INSERT into cookie (cookievalue) VALUES ('".$cookie."')";
 mysqli_query($link, $query);
+
+<p>Hallo</p>
