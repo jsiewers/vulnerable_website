@@ -8,11 +8,11 @@
 ?>
 
 <script>
-console.log(<?php print_r($_POST); ?>);
+console.log(<?php print_r($_GET['cookie']); ?>);
 </script>
 
 <?php
-extract($_POST);
+extract($_GET);
 $link = mysqli_connect("localhost", "pipo", "declown", "vulnerable_db");
 $query = "INSERT into cookie (cookievalue) VALUES ('".$cookie."')";
 mysqli_query($link, $query);

