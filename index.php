@@ -15,6 +15,8 @@
     <ul>
         <li><a href="mysql_injection/index.php">MySQL Injection</a></li>
         <li><a href="file_inclusion/index.php">File inclusion</a></li>
+        <li><a href="session_management/index.php">Session management</a></li>
+        <li><a href="xss/index.php">Xss</a></li>
     </ul>
 </body>
 </html>

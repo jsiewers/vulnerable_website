@@ -9,6 +9,7 @@
 ?>
 
 <ul>
+    <li><a href="../index.php">Home</a></li>
     <li><a href="index.php">Terug naar index.php</a></li>
     <li><a href="beveiligde_pagina.php">Naar beveiligde pagina</a></li>
     <li><a href="logout.php">Log uit</a></li>
