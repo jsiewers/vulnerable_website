@@ -18,7 +18,7 @@ ENGINE = InnoDB;
 
 
 CREATE TABLE IF NOT EXISTS `vulnerable_db`.`cookie` (
-  `idcookie` INT NOT NULL,
+  `idcookie` INT NOT NULL AUTO_INCREMENT,
   `time` VARCHAR(45) NULL,
   `cookiename` VARCHAR(254) NULL,
   `cookievalue` VARCHAR(254) NULL,
