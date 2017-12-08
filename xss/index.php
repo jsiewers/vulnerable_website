@@ -19,8 +19,6 @@ http.send(null);
 
 $link = mysqli_connect("localhost", "pipo", "declown", "vulnerable_db");
 
-
-
 if(isset($_GET['action']) && $_GET['action'] == "delete" && !empty($_GET['id'])) {
     $query = "DELETE FROM user WHERE iduser = ".$_GET['id'];
     mysqli_query($link, $query);
