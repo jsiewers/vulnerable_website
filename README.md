@@ -1,5 +1,6 @@
 # vulnerable_website
 
-#MySQL Injection
-invullen voor naam: lkjlkj' OR '1' = '1
+**Installatie**<br>
+Plaats php-bestanden in htdocs of andere webfolder
+Installeer de database met het script 'install_db.sql'
 
