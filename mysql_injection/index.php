@@ -13,7 +13,7 @@
         <label for="voornaam">Naam: </label>
         <input type="text" id="voornaam" name="voornaam"><br>
         <label for="wachtwoord">Wachtwoord: </label>
-        <input type="password" id="wachtwoord" name="wachtwoord"><br>
+        <input type="text" id="wachtwoord" name="wachtwoord"><br>
         <input type="submit">
     </form>
 
