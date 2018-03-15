@@ -7,10 +7,14 @@
  */
 
 session_start();
+
+include("../layout/header.php");
 include("nav.php");
 
-if($_SESSION["login"]) {
-    echo "Ja, je mag deze beveiligde pagina bekijken!!";
+if(isset($_SESSION["login"])) {
+    echo "<b>Ja, je mag deze beveiligde pagina bekijken!!</b>";
 } else {
-    echo "Nee, je hebt geen toegang!!!";
+    echo "<b>Nee, je hebt geen toegang!!!</b>";
 }
+
+include("../layout/footer.php");

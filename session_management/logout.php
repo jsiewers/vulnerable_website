@@ -7,4 +7,7 @@
  */
 session_start();
 session_destroy();
+
+include("../layout/header.php");
 include("nav.php");
+include("../layout/footer.php");

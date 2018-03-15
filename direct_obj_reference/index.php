@@ -7,18 +7,17 @@
  */
 /* From W3Schools php 5 file upload
 */
+
+include("../layout/header.php");
+echo "<p>direct object reference</p>";
+echo "<h1>File upload</h1>";
+include("nav.php");
 ?>
 
-
-<!DOCTYPE html>
-<html>
-<body>
-
 <form action="upload.php" method="post" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
+    Select image to upload:<br><br>
+    <input type="file" name="fileToUpload" id="fileToUpload"><br>
     <input type="submit" value="Upload Image" name="submit">
 </form>
 
-</body>
-</html>
+<?php include("../layout/footer.php"); ?>

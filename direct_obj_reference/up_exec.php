@@ -9,10 +9,6 @@
 //$output = shell_exec('ls -lart');
 //echo "<pre>$output</pre>";
 
-include("../layout/header.php");
-echo "<p>direct object reference</p>";
-echo "<h1>File upload</h1>";
-include("nav.php");
 
 //Will come back!
 function isLinux($path)
@@ -429,4 +425,3 @@ else
     <?php
 }
 //Intentionally left open to avoid output the file download function 1
-include("../layout/footer.php");

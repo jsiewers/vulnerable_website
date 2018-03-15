@@ -39,3 +39,15 @@ GRANT ALL PRIVILEGES ON vulnerable_db.* TO 'pipo'@'localhost';
 
 
 --zonder MD5
+CREATE TABLE IF NOT EXISTS `vulnerable_db`.`userplainpasswords` (
+  `iduser` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  `password` VARCHAR(500) NULL,
+  PRIMARY KEY (`iduser`))
+ENGINE = InnoDB;
+
+INSERT INTO `userplainpasswords` (`iduser`,`name`,`password`) VALUES (NULL,'jan','test123');
+INSERT INTO `userplainpasswords` (`iduser`,`name`,`password`) VALUES (NULL,'piet','wachtwoord');
+INSERT INTO `userplainpasswords` (`iduser`,`name`,`password`) VALUES (NULL,'truus','1992');
+INSERT INTO `userplainpasswords` (`iduser`,`name`,`password`) VALUES (NULL,'saar','raas');
+INSERT INTO `userplainpasswords` (`iduser`,`name`,`password`) VALUES (NULL,'thomas','samoht');

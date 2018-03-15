@@ -5,13 +5,17 @@
  * Date: 04-12-17
  * Time: 16:10
  */
+
 ?>
-<html>
-<body>
-<form action="db.php" method="post">
-    Naam: <input type="text" name="voornaam"><br>
-    Wachtwoord: <input type="password" name="wachtwoord"><br>
-    <input type="submit">
-</form>
-</body>
-</html>
+<?php include('../layout/header.php'); ?>
+    <h1>MySQL Injection</h1>
+    <form action="db.php" method="post">
+        <label for="voornaam">Naam: </label>
+        <input type="text" id="voornaam" name="voornaam"><br>
+        <label for="wachtwoord">Wachtwoord: </label>
+        <input type="password" id="wachtwoord" name="wachtwoord"><br>
+        <input type="submit">
+    </form>
+
+
+<?php include('../layout/footer.php'); ?>

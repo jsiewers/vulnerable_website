@@ -17,6 +17,10 @@
  */
 
 session_start();
+
+include("../layout/header.php"); ?>
+
+<?php
 include("nav.php");
 
 ?>
@@ -27,3 +31,4 @@ include("nav.php");
 </form>
 
 <a href="session.php">session.php</a>
+<?php include("../layout/footer.php"); ?>
