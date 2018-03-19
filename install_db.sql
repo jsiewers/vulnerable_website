@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `vulnerable_db`.`article` (
   PRIMARY KEY (`idarticle`))
 ENGINE = InnoDB;
 
---Create user
+-- Create user
 CREATE USER 'pipo'@'localhost' IDENTIFIED BY 'declown';
 GRANT ALL PRIVILEGES ON vulnerable_db.* TO 'pipo'@'localhost';
 
