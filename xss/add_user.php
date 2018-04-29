@@ -1,10 +1,12 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: janjaap
  * Date: 06-12-17
  * Time: 13:36
  */
+session_start();
 
 if(isset($_POST['knop'])) {
     extract($_POST);
