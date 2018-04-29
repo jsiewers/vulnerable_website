@@ -7,6 +7,8 @@
  */
 
 session_start();
+$_SESSION = array();
+session_destroy();
 
 /*
  * Maak een nieuwe user aan met naam "jantje" en wachtwoord "<script>alert(document.cookie)</script>"
