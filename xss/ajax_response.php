@@ -5,5 +5,5 @@
  * Date: 28-04-18
  * Time: 15:30
  */
-start_session();
+session_start();
 echo date("Y-m-d H:i:s");
