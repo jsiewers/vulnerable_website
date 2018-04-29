@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Created by PhpStorm.
  * User: janjaap
@@ -7,7 +6,7 @@
  * Time: 13:30
  */
 
-start_session();
+session_start();
 
 /*
  * Maak een nieuwe user aan met naam "jantje" en wachtwoord "<script>alert(document.cookie)</script>"
