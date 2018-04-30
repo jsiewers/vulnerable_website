@@ -11,6 +11,7 @@
 
 <ul>
     <li><a href="index.php">Session management home</a></li>
+    <li><a href="index-safe.php">Session management home (safe version)</a></li>
     <li><a href="beveiligde_pagina.php">Naar beveiligde pagina</a></li>
     <li><a href="logout.php">Log uit</a></li>
 </ul>
