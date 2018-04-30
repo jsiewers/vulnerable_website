@@ -7,12 +7,15 @@
  */
 
 session_start();
+
+include("../layout/header.php");
 include("nav.php");
 
-
-$link = mysqli_connect("localhost", "pipo", "declown", "vulnerable_db");
+$link = mysqli_connect("127.0.0.1", "pipo", "declown", "vulnerable_db");
 
 $query = "SELECT * FROM user WHERE name = '".$_POST["voornaam"]."' and password = '".MD5($_POST["wachtwoord"])."'";
+
+
 
 echo "<br>".$query."<br>";
 
@@ -29,3 +32,4 @@ while($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
 
 ?>
 
+<?php include("../layout/footer.php"); ?>
