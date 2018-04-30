@@ -16,7 +16,7 @@
  *
  */
 
-session_start();
+//session_start();
 
 include("../layout/header.php"); ?>
 
