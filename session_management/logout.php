@@ -7,6 +7,8 @@
  */
 session_start();
 
+
+
 // Unset all of the session variables.
 $_SESSION = array();
 
@@ -22,7 +24,7 @@ if (ini_get("session.use_cookies")) {
 
 // Finally, destroy the session.
 session_destroy();
-session_regenerate_id(true);
+//session_regenerate_id(true);
 
 include("../layout/header.php");
 include("nav.php");
