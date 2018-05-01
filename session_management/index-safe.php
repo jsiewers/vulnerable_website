@@ -19,7 +19,7 @@
 session_start();
 session_regenerate_id();
 
-
+print_r($_SERVER);
 $_SESSION['HTTP_HOST']= $_SERVER['HTTP_HOST'];
 $_SESSION['HTTP_USER_AGENT']= $_SERVER['HTTP_USER_AGENT'];
 
