@@ -14,8 +14,11 @@ include("nav.php");
 //checkPermissions();
 checkPermissionsSafe();
 function checkPermissionsSafe() {
+    //echo "session login, remote addr en http user agent: "
+    //.$_SESSION['login']. ", ".$_SESSION['REMOTE_ADDR'].", "
+    //.$_SESSION['HTTP_USER_AGENT']."<br>";
     if(isset($_SESSION["login"])
-        && $_SESSION['HTTP_HOST']== $_SERVER['HTTP_HOST']
+        && $_SESSION['REMOTE_ADDR']== getenv('REMOTE_ADDR')
         && $_SESSION['HTTP_USER_AGENT']== $_SERVER['HTTP_USER_AGENT'])
    {
         echo "<b>Ja, je mag deze beveiligde pagina bekijken!!</b>";
